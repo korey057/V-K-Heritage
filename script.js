@@ -285,3 +285,62 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial calculation
     calculatePayment();
   }
+
+  // ==========================================================================
+  // Fiche Technique Modal Logic
+  // ==========================================================================
+  const specModal = document.getElementById('specModal');
+  const closeSpecModalBtn = document.getElementById('closeSpecModalBtn');
+  const openSpecBtns = document.querySelectorAll('.open-spec-btn');
+
+  // Modal elements to populate
+  const specTitle = document.getElementById('specModalTitle');
+  const specMoteur = document.getElementById('specMoteur');
+  const specPuissance = document.getElementById('specPuissance');
+  const specTransmission = document.getElementById('specTransmission');
+  const specEquipements = document.getElementById('specEquipements');
+
+  const openSpecModal = (btn) => {
+    // Populate data from attributes
+    specTitle.textContent = btn.dataset.title;
+    specMoteur.textContent = btn.dataset.moteur;
+    specPuissance.textContent = btn.dataset.puissance;
+    specTransmission.textContent = btn.dataset.transmission;
+    specEquipements.textContent = btn.dataset.equipements;
+
+    // Show modal
+    specModal.classList.add('active');
+    specModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeSpecModal = () => {
+    specModal.classList.remove('active');
+    specModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  if (specModal) {
+    openSpecBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openSpecModal(btn);
+      });
+    });
+
+    if (closeSpecModalBtn) {
+      closeSpecModalBtn.addEventListener('click', closeSpecModal);
+    }
+
+    specModal.addEventListener('click', (e) => {
+      if (e.target === specModal) {
+        closeSpecModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && specModal.classList.contains('active')) {
+        closeSpecModal();
+      }
+    });
+  }

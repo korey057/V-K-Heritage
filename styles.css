@@ -1747,3 +1747,38 @@ h1, h2, h3, h4 {
     padding: 2rem 1.5rem;
   }
 }
+
+/* Fiche Technique Modal Specifics */
+.spec-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.spec-detail-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.spec-detail-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.spec-detail-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-sakura);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.spec-detail-value {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  line-height: 1.5;
+}
