@@ -148,7 +148,7 @@
     </section>
 
     <!-- Section: Stock -->
-    <section class="section section-dark" id="stock">
+    <section class="section" id="stock">
       <div class="container">
         <div class="section-header">
           <span class="section-kanji">在庫</span>
@@ -460,6 +460,58 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Sourcing VIP -->
+    <section class="section section-dark" id="sourcing">
+      <div class="container">
+        <div class="grid grid-2 align-items-center">
+          <!-- Colonne Gauche : Pitch -->
+          <div class="sourcing-content">
+            <h2 class="section-title">Vous ne trouvez pas votre icône ?</h2>
+            <p class="section-subtitle">
+              La force d'Espoir JDM France réside dans notre réseau. Si le véhicule de vos rêves n'est pas dans notre showroom, nos courtiers le trouveront pour vous au Japon (enchères USS, JAA) ou en Europe. Nous garantissons une sélection stricte : historique limpide, grades d'enchères élevés (4 ou 4.5 minimum), et inspection physique sur place avant tout achat.
+            </p>
+          </div>
+
+          <!-- Colonne Droite : Formulaire VIP -->
+          <div class="sourcing-form-wrapper">
+            <div class="sourcing-card">
+              <form id="sourcingForm" class="booking-form">
+                <div class="form-grid">
+                  <div class="form-group full-width">
+                    <label for="sourcingName">Nom & Prénom <span class="required">*</span></label>
+                    <input type="text" id="sourcingName" name="sourcingName" required placeholder="ex: Thomas Dubois">
+                  </div>
+                  <div class="form-group">
+                    <label for="sourcingPhone">Téléphone <span class="required">*</span></label>
+                    <input type="tel" id="sourcingPhone" name="sourcingPhone" required placeholder="ex: 06 12 34 56 78">
+                  </div>
+                  <div class="form-group">
+                    <label for="sourcingEmail">Email <span class="required">*</span></label>
+                    <input type="email" id="sourcingEmail" name="sourcingEmail" required placeholder="ex: thomas@exemple.fr">
+                  </div>
+                  <div class="form-group full-width">
+                    <label for="sourcingModel">Marque & Modèle recherchés <span class="required">*</span></label>
+                    <input type="text" id="sourcingModel" name="sourcingModel" required placeholder="ex: Mazda RX-7 FD3S">
+                  </div>
+                  <div class="form-group full-width">
+                    <label for="sourcingBudget">Budget maximum estimé (€) <span class="required">*</span></label>
+                    <input type="number" id="sourcingBudget" name="sourcingBudget" required placeholder="ex: 85000">
+                  </div>
+                  <div class="form-group full-width">
+                    <label for="sourcingDetails">Exigences particulières</label>
+                    <textarea id="sourcingDetails" name="sourcingDetails" rows="3" placeholder="Couleur, Boîte manuelle, Kilométrage max..."></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full btn-submit">
+                  <span>Lancer la recherche</span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
