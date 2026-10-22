@@ -31,9 +31,10 @@
       </a>
 
       <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#stock">Stock & Arrivages</a>
+        <a href="#philosophie">Notre Philosophie</a>
         <a href="#categories">Catégories</a>
-        <a href="#processus">Processus d'Importation</a>
+        <a href="#stock">Stock & Arrivages</a>
+        <a href="#logistique">Transport & Logistique</a>
         <a href="#financement">Financement</a>
       </nav>
 
@@ -74,6 +75,25 @@
   </section>
 
   <main>
+    <!-- Section: À Propos / Philosophie -->
+    <section class="section section-dark editorial-section" id="philosophie">
+      <div class="container editorial-container">
+        <div class="editorial-content">
+          <span class="section-kanji editorial-kanji">哲学</span>
+          <h2 class="editorial-title">L'Antithèse du Luxe Ostentatoire.</h2>
+          <p class="editorial-text">
+            Espoir JDM France est né d'une passion brute pour le sport automobile et d'un rejet des concessions traditionnelles. Aujourd'hui, l'automobile sportive s'égare souvent dans la course au statut social. Nous ne proposons ni Ferrari ni Lamborghini destinées à parader devant les casinos.
+          </p>
+          <p class="editorial-text">
+            Notre sélection se concentre sur l'essentiel : l'authenticité mécanique. Que ce soit l'ingénierie légendaire des JDM des années 90 (Skyline, Supra, RX-7) ou la rigueur des Track-Toys européens (Porsche 911 GT3, Mégane RS), nous importons des machines conçues pour être pilotées, pour transmettre des émotions sans filtres et pour la piste.
+          </p>
+        </div>
+        <div class="editorial-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1598084991519-c90900bc9df0?q=80&w=800&auto=format&fit=crop" alt="Détail volant course" class="editorial-image">
+        </div>
+      </div>
+    </section>
+
     <!-- Section: Catégories -->
     <section class="section" id="categories">
       <div class="container">
@@ -143,7 +163,7 @@
           <!-- Car 1 -->
           <div class="stock-card">
             <div class="stock-badge badge-transit">Import Japon</div>
-            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Nissan Skyline R34">
+            <img src="assets/stock/r34/1.jpg" class="stock-img" alt="Nissan Skyline R34">
             <div class="stock-info">
               <h3 class="stock-title">Nissan Skyline GT-R (R34) V-Spec</h3>
               <div class="stock-specs">
@@ -155,6 +175,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-r34">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="r34"
                         data-title="Nissan Skyline GT-R (R34) V-Spec"
                         data-moteur="2.6L 6 cyl. bi-turbo (RB26DETT)"
                         data-puissance="280 ch"
@@ -167,7 +188,7 @@
           <!-- Car 2 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Toyota Supra RZ">
+            <img src="assets/stock/supra/1.jpg" class="stock-img" alt="Toyota Supra RZ">
             <div class="stock-info">
               <h3 class="stock-title">Toyota Supra (JZA80) RZ</h3>
               <div class="stock-specs">
@@ -179,6 +200,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-supra">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="supra"
                         data-title="Toyota Supra (JZA80) RZ"
                         data-moteur="3.0L 6 cyl. bi-turbo (2JZ-GTE)"
                         data-puissance="330 ch"
@@ -191,7 +213,7 @@
           <!-- Car 3 -->
           <div class="stock-card">
             <div class="stock-badge badge-transit">Arrivage</div>
-            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Nissan Silvia S15">
+            <img src="assets/stock/s15/1.jpg" class="stock-img" alt="Nissan Silvia S15">
             <div class="stock-info">
               <h3 class="stock-title">Nissan Silvia (S15) Spec-R</h3>
               <div class="stock-specs">
@@ -203,6 +225,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-s15">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="s15"
                         data-title="Nissan Silvia (S15) Spec-R"
                         data-moteur="2.0L 4 cyl. turbo (SR20DET)"
                         data-puissance="250 ch"
@@ -215,7 +238,7 @@
           <!-- Car 4 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1611821064430-0d40221e4e73?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mazda RX-7">
+            <img src="assets/stock/rx7/1.jpg" class="stock-img" alt="Mazda RX-7">
             <div class="stock-info">
               <h3 class="stock-title">Mazda RX-7 (FD3S) Spirit R</h3>
               <div class="stock-specs">
@@ -227,6 +250,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-rx7">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="rx7"
                         data-title="Mazda RX-7 (FD3S) Spirit R"
                         data-moteur="1.3L bi-rotor bi-turbo (13B-REW)"
                         data-puissance="280 ch"
@@ -239,7 +263,7 @@
           <!-- Car 5 -->
           <div class="stock-card">
             <div class="stock-badge badge-transit">Import Japon</div>
-            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Toyota Chaser">
+            <img src="assets/stock/chaser/1.jpg" class="stock-img" alt="Toyota Chaser">
             <div class="stock-info">
               <h3 class="stock-title">Toyota Chaser (JZX100) Tourer V</h3>
               <div class="stock-specs">
@@ -251,6 +275,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-chaser">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="chaser"
                         data-title="Toyota Chaser (JZX100) Tourer V"
                         data-moteur="2.5L 6 cyl. turbo (1JZ-GTE VVT-i)"
                         data-puissance="280 ch"
@@ -263,7 +288,7 @@
           <!-- Car 6 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mitsubishi Evo VI">
+            <img src="assets/stock/evo6/1.jpg" class="stock-img" alt="Mitsubishi Evo VI">
             <div class="stock-info">
               <h3 class="stock-title">Mitsubishi Lancer Evo VI T.M.E.</h3>
               <div class="stock-specs">
@@ -275,6 +300,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-evo6">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="evo6"
                         data-title="Mitsubishi Lancer Evo VI Tommi Mäkinen Edition"
                         data-moteur="2.0L 4 cyl. turbo titane (4G63T)"
                         data-puissance="280 ch"
@@ -287,7 +313,7 @@
           <!-- Car 7 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda Civic EP3">
+            <img src="assets/stock/ep3/1.jpg" class="stock-img" alt="Honda Civic EP3">
             <div class="stock-info">
               <h3 class="stock-title">Honda Civic Type R (EP3) JDM</h3>
               <div class="stock-specs">
@@ -299,6 +325,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-ep3">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="ep3"
                         data-title="Honda Civic Type R (EP3) JDM"
                         data-moteur="2.0L 4 cyl. atmo (K20A i-VTEC)"
                         data-puissance="215 ch"
@@ -311,7 +338,7 @@
           <!-- Car 8 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1503371064946-fb5914c5bac4?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Porsche 911 GT3">
+            <img src="assets/stock/gt3/1.jpg" class="stock-img" alt="Porsche 911 GT3">
             <div class="stock-info">
               <h3 class="stock-title">Porsche 911 (997.1) GT3</h3>
               <div class="stock-specs">
@@ -323,6 +350,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-gt3">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="gt3"
                         data-title="Porsche 911 (997.1) GT3"
                         data-moteur="3.6L Flat-6 atmo 'Mezger'"
                         data-puissance="415 ch"
@@ -335,7 +363,7 @@
           <!-- Car 9 -->
           <div class="stock-card">
             <div class="stock-badge badge-transit">Arrivage</div>
-            <img src="https://images.unsplash.com/photo-1611821064430-0d40221e4e73?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Renault Megane RS">
+            <img src="assets/stock/megane/1.jpg" class="stock-img" alt="Renault Megane RS">
             <div class="stock-info">
               <h3 class="stock-title">Renault Mégane 4 RS Trophy-R</h3>
               <div class="stock-specs">
@@ -347,6 +375,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-megane">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="megane"
                         data-title="Renault Mégane 4 RS Trophy-R"
                         data-moteur="1.8L 4 cyl. turbo"
                         data-puissance="300 ch"
@@ -359,7 +388,7 @@
           <!-- Car 10 -->
           <div class="stock-card">
             <div class="stock-badge badge-transit">Sur Demande</div>
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda NSX-R">
+            <img src="assets/stock/nsx/1.jpg" class="stock-img" alt="Honda NSX-R">
             <div class="stock-info">
               <h3 class="stock-title">Honda NSX-R (NA1)</h3>
               <div class="stock-specs">
@@ -371,6 +400,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-nsx">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="nsx"
                         data-title="Honda NSX-R (NA1)"
                         data-moteur="3.0L V6 VTEC (Blueprinted)"
                         data-puissance="280 ch"
@@ -383,7 +413,7 @@
           <!-- Car 11 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda S2000">
+            <img src="assets/stock/s2000/1.jpg" class="stock-img" alt="Honda S2000">
             <div class="stock-info">
               <h3 class="stock-title">Honda S2000 (AP1)</h3>
               <div class="stock-specs">
@@ -395,6 +425,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-s2000">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="s2000"
                         data-title="Honda S2000 (AP1)"
                         data-moteur="2.0L 4 cyl. atmo (F20C)"
                         data-puissance="240 ch à 9000 tr/min"
@@ -407,7 +438,7 @@
           <!-- Car 12 -->
           <div class="stock-card">
             <div class="stock-badge badge-stock">En Stock</div>
-            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mazda MX-5">
+            <img src="assets/stock/mx5/1.jpg" class="stock-img" alt="Mazda MX-5">
             <div class="stock-info">
               <h3 class="stock-title">Mazda MX-5 (NA) 1.8</h3>
               <div class="stock-specs">
@@ -419,6 +450,7 @@
               <div class="stock-actions">
                 <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-mx5">Réserver un essai</button>
                 <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-images="mx5"
                         data-title="Mazda MX-5 (NA) 1.8"
                         data-moteur="1.8L 4 cyl. atmo (BP-ZE)"
                         data-puissance="130 ch"
@@ -432,52 +464,68 @@
       </div>
     </section>
 
-    <!-- Section: Processus d'importation (Timeline) -->
-    <section class="section" id="processus">
+    <!-- Section: Transport, Importation & Logistique -->
+    <section class="section" id="logistique">
       <div class="container">
         <div class="section-header text-center mx-auto">
           <span class="section-kanji">過程</span>
-          <span class="section-tag">LA MÉTHODE ESPOIR</span>
-          <h2 class="section-title">Parcours & Transparence</h2>
+          <span class="section-tag">TRANSPORT & LOGISTIQUE</span>
+          <h2 class="section-title">Une logistique maîtrisée de A à Z</h2>
           <p class="section-subtitle">
-            Un processus d'importation sans faille, pour une sérénité totale. De la sélection au Japon jusqu'à la remise des clés.
+            Découvrez notre expertise pour faire venir votre véhicule en toute sécurité.
           </p>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-icon">🔍</div>
-            <div class="timeline-content">
-              <h3>1. Recherche & Sélection</h3>
-              <p>Ciblage des enchères au Japon (USS, JAA) et réseau européen. Analyse stricte des carnets d'entretien et historiques (certificats VX).</p>
+        <div class="accordion-container mx-auto">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-icon">🚢</span>
+              <h3>A. Logistique Maritime</h3>
+              <span class="accordion-toggle-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>Choix entre navire Roulier (Ro-Ro) ou Conteneur sécurisé. Les véhicules sont assurés tous risques "porte à porte" de Yokohama/Tokyo jusqu'au Havre ou Fos-sur-Mer. (Délai estimé : 6 à 8 semaines de mer).</p>
+              </div>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">📋</div>
-            <div class="timeline-content">
-              <h3>2. Inspection sur Place</h3>
-              <p>Nos agents au Japon ou en Europe inspectent physiquement chaque véhicule (structure, compression moteur, électronique) avant tout achat.</p>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-icon">📋</span>
+              <h3>B. Dédouanement & Fiscalité</h3>
+              <span class="accordion-toggle-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>Prise en charge administrative totale. Paiement des droits de douane (10%) et de la TVA (20%). Obtention du certificat de dédouanement 846A vous garantissant un véhicule en règle avec les douanes françaises.</p>
+              </div>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">🚢</div>
-            <div class="timeline-content">
-              <h3>3. Importation Sécurisée</h3>
-              <p>Transport maritime Ro-Ro ou conteneur avec assurance tous risques. Prise en charge intégrale du dédouanement et des taxes (846A).</p>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-icon">⚙️</span>
+              <h3>C. Homologation (UTAC / DREAL)</h3>
+              <span class="accordion-toggle-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>L'étape la plus complexe, gérée à 100% par nos ingénieurs. Mise en conformité technique (phares, ceintures, vitrages), passage des 5 tests UTAC (bruit, pollution, freinage, rétrovision, antiparasitage) et présentation à l'inspecteur DREAL pour l'obtention du RTI (Réception à Titre Isolé).</p>
+              </div>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">⚖️</div>
-            <div class="timeline-content">
-              <h3>4. Homologation Française</h3>
-              <p>Passage à l'UTAC et DREAL. Conformité intégrale assurée par notre équipe technique. Vous recevez un véhicule en règle avec carte grise française.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">✨</div>
-            <div class="timeline-content">
-              <h3>5. Préparation ESPOIR</h3>
-              <p>Révision mécanique complète, detailing esthétique, et contrôle qualité final. Votre véhicule est prêt pour la route ou la piste.</p>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-icon">🏁</span>
+              <h3>D. Livraison & Immatriculation</h3>
+              <span class="accordion-toggle-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>Après un detailing complet dans nos locaux, le véhicule vous est livré avec son quitus fiscal, son contrôle technique vierge et sa carte grise française définitive (WW provisoire en attendant le document final).</p>
+              </div>
             </div>
           </div>
         </div>
@@ -670,6 +718,11 @@
       <div class="modal-header">
         <span class="modal-badge">⛩️ FICHE TECHNIQUE</span>
         <h2 id="specModalTitle" class="modal-title">Titre du Véhicule</h2>
+      </div>
+
+      <!-- New Image Gallery Section -->
+      <div id="specGallery" class="spec-gallery">
+        <!-- Javascript will inject 5 images here -->
       </div>
 
       <div class="spec-modal-content">
