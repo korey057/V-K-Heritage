@@ -238,77 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
   // ==========================================================================
-  // Fiche Technique Modal Logic
-  // ==========================================================================
-  const specModal = document.getElementById('specModal');
-  const closeSpecModalBtn = document.getElementById('closeSpecModalBtn');
-  const openSpecBtns = document.querySelectorAll('.open-spec-btn');
-
-  // Modal elements to populate
-  const specTitle = document.getElementById('specModalTitle');
-  const specGallery = document.getElementById('specGallery');
-  const specMoteur = document.getElementById('specMoteur');
-  const specPuissance = document.getElementById('specPuissance');
-  const specTransmission = document.getElementById('specTransmission');
-  const specEquipements = document.getElementById('specEquipements');
-
-  const openSpecModal = (btn) => {
-    // Populate data from attributes
-    specTitle.textContent = btn.dataset.title;
-    specMoteur.textContent = btn.dataset.moteur;
-    specPuissance.textContent = btn.dataset.puissance;
-    specTransmission.textContent = btn.dataset.transmission;
-    specEquipements.textContent = btn.dataset.equipements;
-
-    // Generate Gallery
-    if (specGallery) {
-      const folder = btn.dataset.images;
-      let galleryHtml = `<div class="spec-gallery-main"><img src="assets/stock/${folder}/1.jpg" alt="Vue principale ${btn.dataset.title}"></div>`;
-
-      for(let i = 2; i <= 5; i++) {
-        galleryHtml += `<div class="spec-gallery-thumb"><img src="assets/stock/${folder}/${i}.jpg" alt="Vue détaillée ${i}"></div>`;
-      }
-      specGallery.innerHTML = galleryHtml;
-    }
-
-    // Show modal
-    specModal.classList.add('active');
-    specModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  };
-
-  const closeSpecModal = () => {
-    specModal.classList.remove('active');
-    specModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  };
-
-  if (specModal) {
-    openSpecBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        openSpecModal(btn);
-      });
-    });
-
-    if (closeSpecModalBtn) {
-      closeSpecModalBtn.addEventListener('click', closeSpecModal);
-    }
-
-    specModal.addEventListener('click', (e) => {
-      if (e.target === specModal) {
-        closeSpecModal();
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && specModal.classList.contains('active')) {
-        closeSpecModal();
-      }
-    });
-  }
-
-  // ==========================================================================
   // Simulator Logic
   // ==========================================================================
   const carPriceInput = document.getElementById('carPrice');
@@ -366,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Modal elements to populate
   const specTitle = document.getElementById('specModalTitle');
+  const specGallery = document.getElementById('specGallery');
   const specMoteur = document.getElementById('specMoteur');
   const specPuissance = document.getElementById('specPuissance');
   const specTransmission = document.getElementById('specTransmission');
@@ -373,11 +303,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openSpecModal = (btn) => {
     // Populate data from attributes
-    specTitle.textContent = btn.dataset.title;
-    specMoteur.textContent = btn.dataset.moteur;
-    specPuissance.textContent = btn.dataset.puissance;
-    specTransmission.textContent = btn.dataset.transmission;
-    specEquipements.textContent = btn.dataset.equipements;
+    if (specTitle) specTitle.textContent = btn.dataset.title || '';
+    if (specMoteur) specMoteur.textContent = btn.dataset.moteur || '';
+    if (specPuissance) specPuissance.textContent = btn.dataset.puissance || '';
+    if (specTransmission) specTransmission.textContent = btn.dataset.transmission || '';
+    if (specEquipements) specEquipements.textContent = btn.dataset.equipements || '';
+
+    // Generate Gallery
+    if (specGallery && btn.dataset.images) {
+      const folder = btn.dataset.images;
+      let galleryHtml = `<div class="spec-gallery-main"><img src="assets/stock/${folder}/1.jpg" alt="Vue principale ${btn.dataset.title || 'Véhicule'}"></div>`;
+
+      for(let i = 2; i <= 5; i++) {
+        galleryHtml += `<div class="spec-gallery-thumb"><img src="assets/stock/${folder}/${i}.jpg" alt="Vue détaillée ${i}"></div>`;
+      }
+      specGallery.innerHTML = galleryHtml;
+    } else if (specGallery) {
+      specGallery.innerHTML = ''; // Clear if no images
+    }
 
     // Show modal
     specModal.classList.add('active');
