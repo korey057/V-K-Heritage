@@ -107,9 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Populate Success State Text
       document.getElementById('successName').textContent = name;
-      document.getElementById('successPhone').textContent = phone;
-      document.getElementById('successDate').textContent = formattedDate;
-      document.getElementById('successSlot').textContent = slotMap[timeSlot] || timeSlot;
 
       // Transition Form View -> Success View
       bookingForm.style.display = 'none';
@@ -240,3 +237,51 @@ document.addEventListener('DOMContentLoaded', () => {
     animateSakura();
   }
 });
+  // ==========================================================================
+  // Simulator Logic
+  // ==========================================================================
+  const carPriceInput = document.getElementById('carPrice');
+  const downPaymentInput = document.getElementById('downPayment');
+  const durationInput = document.getElementById('duration');
+  const downPaymentDisplay = document.getElementById('downPaymentDisplay');
+  const durationDisplay = document.getElementById('durationDisplay');
+  const monthlyPaymentDisplay = document.getElementById('monthlyPayment');
+
+  if (carPriceInput && downPaymentInput && durationInput) {
+    const calculatePayment = () => {
+      const price = parseFloat(carPriceInput.value) || 0;
+      let downPayment = parseFloat(downPaymentInput.value) || 0;
+      const duration = parseInt(durationInput.value, 10) || 48;
+
+      // Prevent down payment from exceeding car price
+      if (downPayment > price) {
+        downPayment = price;
+        downPaymentInput.value = price;
+      }
+
+      // Update max attribute dynamically
+      downPaymentInput.max = price;
+
+      downPaymentDisplay.textContent = downPayment.toLocaleString('fr-FR');
+      durationDisplay.textContent = duration;
+
+      const loanAmount = price - downPayment;
+      const annualRate = 0.059; // 5.9% TAEG
+      const monthlyRate = annualRate / 12;
+
+      let monthlyPayment = 0;
+      if (loanAmount > 0) {
+        // Standard amortization formula
+        monthlyPayment = (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -duration));
+      }
+
+      monthlyPaymentDisplay.textContent = Math.round(monthlyPayment).toLocaleString('fr-FR');
+    };
+
+    carPriceInput.addEventListener('input', calculatePayment);
+    downPaymentInput.addEventListener('input', calculatePayment);
+    durationInput.addEventListener('input', calculatePayment);
+
+    // Initial calculation
+    calculatePayment();
+  }
