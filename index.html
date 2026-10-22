@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espoir JDM France | Importation & Concession Sportive Multimarque JDM & Europe</title>
+  <meta name="description" content="Espoir JDM France : L'excellence de l'importation de véhicules sportifs. Découvrez notre stock de Porsche, Nissan, Toyota et Renault RS. Authenticité mécanique et pureté de pilotage.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@600;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Video & Canvas Effects -->
+  <div class="bg-canvas-container" aria-hidden="true">
+    <canvas id="sakura-canvas"></canvas>
+    <div class="bg-kanji-watermark">希望</div> <!-- Espoir -->
+    <div class="bg-texture-overlay"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Espoir JDM France Accueil">
+        <span class="brand-sub">ESPOIR</span>
+        <span class="brand-badge">JDM FRANCE</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#stock">Stock & Arrivages</a>
+        <a href="#categories">Catégories</a>
+        <a href="#processus">Processus d'Importation</a>
+        <a href="#financement">Financement</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary open-modal-btn" data-source="header-cta">
+          <span class="btn-icon">⚡</span>
+          Réserver un essai
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container-centered">
+      <div class="hero-content text-center">
+        <div class="hero-badge mx-auto">
+          <span class="torii-accent">⛩️</span> SÉLECTION STRICTE - PISTE & PASSION
+        </div>
+
+        <h1 class="hero-title">
+          <span class="kanji-subtitle">本物の情熱</span>
+          L'Authenticité Mécanique <br>
+          <span class="text-highlight">Sans Compromis</span>
+        </h1>
+
+        <p class="hero-lead mx-auto">
+          Concession et import-export de véhicules sportifs de légende. Porsche, Nissan, Toyota, Renault RS. Nous sélectionnons uniquement des machines offrant une connexion pure entre le pilote et la route.
+        </p>
+
+        <div class="hero-cta-group mx-auto" style="align-items: center;">
+          <button class="btn btn-primary btn-hero open-modal-btn" style="align-items: center;" data-source="hero-main-cta">
+            <span class="btn-text">Découvrir le Stock</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Section: Catégories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-header text-center mx-auto">
+          <span class="section-kanji">分類</span>
+          <span class="section-tag">NOTRE SÉLECTION</span>
+          <h2 class="section-title">Les Architectures de la Passion</h2>
+          <p class="section-subtitle">
+            Nous classons nos véhicules non pas par marque, mais par l'expérience de pilotage qu'ils délivrent.
+          </p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="category-card">
+            <div class="category-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=600&auto=format&fit=crop" alt="Coupés Sportifs">
+            </div>
+            <div class="category-content">
+              <h3>Coupés Sportifs</h3>
+              <p>L'équilibre parfait. Supra, 911, Silvia.</p>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=600&auto=format&fit=crop" alt="Berlines de Caractère">
+            </div>
+            <div class="category-content">
+              <h3>Berlines de Caractère</h3>
+              <p>Puissance et polyvalence. Chaser, Evo, STI.</p>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1611821064430-0d40221e4e73?q=80&w=600&auto=format&fit=crop" alt="Track-Toys">
+            </div>
+            <div class="category-content">
+              <h3>Track-Toys</h3>
+              <p>Conçues pour le chrono. GT3, Megane RS.</p>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=600&auto=format&fit=crop" alt="Cabriolets / Roadsters">
+            </div>
+            <div class="category-content">
+              <h3>Roadsters</h3>
+              <p>Ciel ouvert et haut régime. S2000, MX-5.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Stock -->
+    <section class="section section-dark" id="stock">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kanji">在庫</span>
+          <span class="section-tag">SHOWROOM EXCLUSIF</span>
+          <h2 class="section-title">Stock & Arrivages</h2>
+          <p class="section-subtitle">
+            Chaque véhicule est inspecté, certifié et prêt à vous offrir son plein potentiel.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Car 1 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-transit">Import Japon</div>
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Nissan Skyline R34">
+            <div class="stock-info">
+              <h3 class="stock-title">Nissan Skyline GT-R (R34) V-Spec</h3>
+              <div class="stock-specs">
+                <span>⚙️ RB26DETT</span>
+                <span>🛣️ 95 000 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">145 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-r34">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Nissan Skyline GT-R (R34) V-Spec"
+                        data-moteur="2.6L 6 cyl. bi-turbo (RB26DETT)"
+                        data-puissance="280 ch"
+                        data-transmission="Manuelle 6 rapports, ATTESA E-TS Pro"
+                        data-equipements="A-LSD, suspension V-Spec, diffuseur carbone">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 2 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Toyota Supra RZ">
+            <div class="stock-info">
+              <h3 class="stock-title">Toyota Supra (JZA80) RZ</h3>
+              <div class="stock-specs">
+                <span>⚙️ 2JZ-GTE</span>
+                <span>🛣️ 82 000 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">68 500 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-supra">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Toyota Supra (JZA80) RZ"
+                        data-moteur="3.0L 6 cyl. bi-turbo (2JZ-GTE)"
+                        data-puissance="330 ch"
+                        data-transmission="Manuelle 6 rapports, propulsion"
+                        data-equipements="Freins 4 pistons, aileron d'origine">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 3 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-transit">Arrivage</div>
+            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Nissan Silvia S15">
+            <div class="stock-info">
+              <h3 class="stock-title">Nissan Silvia (S15) Spec-R</h3>
+              <div class="stock-specs">
+                <span>⚙️ SR20DET</span>
+                <span>🛣️ 73 959 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">35 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-s15">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Nissan Silvia (S15) Spec-R"
+                        data-moteur="2.0L 4 cyl. turbo (SR20DET)"
+                        data-puissance="250 ch"
+                        data-transmission="Manuelle 6 rapports, propulsion"
+                        data-equipements="Différentiel LSD hélicoïdal, renforts Spec-R">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1611821064430-0d40221e4e73?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mazda RX-7">
+            <div class="stock-info">
+              <h3 class="stock-title">Mazda RX-7 (FD3S) Spirit R</h3>
+              <div class="stock-specs">
+                <span>⚙️ 13B-REW</span>
+                <span>🛣️ 45 000 km</span>
+                <span>🕹️ BVM5</span>
+              </div>
+              <div class="stock-price">95 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-rx7">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Mazda RX-7 (FD3S) Spirit R"
+                        data-moteur="1.3L bi-rotor bi-turbo (13B-REW)"
+                        data-puissance="280 ch"
+                        data-transmission="Manuelle 5 rapports, propulsion"
+                        data-equipements="Baquets Recaro, jantes BBS 17', freins élargis">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 5 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-transit">Import Japon</div>
+            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Toyota Chaser">
+            <div class="stock-info">
+              <h3 class="stock-title">Toyota Chaser (JZX100) Tourer V</h3>
+              <div class="stock-specs">
+                <span>⚙️ 1JZ-GTE</span>
+                <span>🛣️ 62 700 km</span>
+                <span>🕹️ BVM5</span>
+              </div>
+              <div class="stock-price">32 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-chaser">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Toyota Chaser (JZX100) Tourer V"
+                        data-moteur="2.5L 6 cyl. turbo (1JZ-GTE VVT-i)"
+                        data-puissance="280 ch"
+                        data-transmission="Manuelle 5 rapports, propulsion"
+                        data-equipements="Différentiel Torsen, phares HID">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 6 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mitsubishi Evo VI">
+            <div class="stock-info">
+              <h3 class="stock-title">Mitsubishi Lancer Evo VI T.M.E.</h3>
+              <div class="stock-specs">
+                <span>⚙️ 4G63T</span>
+                <span>🛣️ 55 000 km</span>
+                <span>🕹️ BVM5</span>
+              </div>
+              <div class="stock-price">85 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-evo6">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Mitsubishi Lancer Evo VI Tommi Mäkinen Edition"
+                        data-moteur="2.0L 4 cyl. turbo titane (4G63T)"
+                        data-puissance="280 ch"
+                        data-transmission="Intégrale avec AYC"
+                        data-equipements="Jantes Enkei blanches, Recaro rouges, châssis rabaissé">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 7 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda Civic EP3">
+            <div class="stock-info">
+              <h3 class="stock-title">Honda Civic Type R (EP3) JDM</h3>
+              <div class="stock-specs">
+                <span>⚙️ K20A</span>
+                <span>🛣️ 85 000 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">22 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-ep3">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Honda Civic Type R (EP3) JDM"
+                        data-moteur="2.0L 4 cyl. atmo (K20A i-VTEC)"
+                        data-puissance="215 ch"
+                        data-transmission="Manuelle 6 rapports, traction"
+                        data-equipements="LSD d'usine, Recaro rouges, Championship White">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 8 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1503371064946-fb5914c5bac4?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Porsche 911 GT3">
+            <div class="stock-info">
+              <h3 class="stock-title">Porsche 911 (997.1) GT3</h3>
+              <div class="stock-specs">
+                <span>⚙️ 3.6L Mezger</span>
+                <span>🛣️ 42 200 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">112 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-gt3">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Porsche 911 (997.1) GT3"
+                        data-moteur="3.6L Flat-6 atmo 'Mezger'"
+                        data-puissance="415 ch"
+                        data-transmission="Manuelle 6 rapports, propulsion"
+                        data-equipements="PASM, Pack Clubsport, sièges carbone">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 9 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-transit">Arrivage</div>
+            <img src="https://images.unsplash.com/photo-1611821064430-0d40221e4e73?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Renault Megane RS">
+            <div class="stock-info">
+              <h3 class="stock-title">Renault Mégane 4 RS Trophy-R</h3>
+              <div class="stock-specs">
+                <span>⚙️ 1.8L Turbo</span>
+                <span>🛣️ 12 000 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">62 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-megane">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Renault Mégane 4 RS Trophy-R"
+                        data-moteur="1.8L 4 cyl. turbo"
+                        data-puissance="300 ch"
+                        data-transmission="Manuelle 6 rapports, traction"
+                        data-equipements="Jantes carbone, Akrapovič titane, amortisseurs Öhlins">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 10 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-transit">Sur Demande</div>
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda NSX-R">
+            <div class="stock-info">
+              <h3 class="stock-title">Honda NSX-R (NA1)</h3>
+              <div class="stock-specs">
+                <span>⚙️ 3.0L V6</span>
+                <span>🛣️ 65 000 km</span>
+                <span>🕹️ BVM5</span>
+              </div>
+              <div class="stock-price">250 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-nsx">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Honda NSX-R (NA1)"
+                        data-moteur="3.0L V6 VTEC (Blueprinted)"
+                        data-puissance="280 ch"
+                        data-transmission="Manuelle 5 rapports, propulsion"
+                        data-equipements="Allègement extrême (-120 kg), baquets Kevlar">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 11 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1549448743-34e402cc2449?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Honda S2000">
+            <div class="stock-info">
+              <h3 class="stock-title">Honda S2000 (AP1)</h3>
+              <div class="stock-specs">
+                <span>⚙️ F20C</span>
+                <span>🛣️ 14 295 km</span>
+                <span>🕹️ BVM6</span>
+              </div>
+              <div class="stock-price">40 900 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-s2000">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Honda S2000 (AP1)"
+                        data-moteur="2.0L 4 cyl. atmo (F20C)"
+                        data-puissance="240 ch à 9000 tr/min"
+                        data-transmission="Manuelle 6 rapports, propulsion"
+                        data-equipements="Différentiel Torsen, compteur digital">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 12 -->
+          <div class="stock-card">
+            <div class="stock-badge badge-stock">En Stock</div>
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" class="stock-img" alt="Mazda MX-5">
+            <div class="stock-info">
+              <h3 class="stock-title">Mazda MX-5 (NA) 1.8</h3>
+              <div class="stock-specs">
+                <span>⚙️ 1.8L</span>
+                <span>🛣️ 115 000 km</span>
+                <span>🕹️ BVM5</span>
+              </div>
+              <div class="stock-price">15 000 €</div>
+              <div class="stock-actions">
+                <button class="btn btn-primary btn-sm btn-full open-modal-btn" data-source="stock-mx5">Réserver un essai</button>
+                <button class="btn btn-secondary btn-sm btn-full open-spec-btn"
+                        data-title="Mazda MX-5 (NA) 1.8"
+                        data-moteur="1.8L 4 cyl. atmo (BP-ZE)"
+                        data-puissance="130 ch"
+                        data-transmission="Manuelle 5 rapports, propulsion"
+                        data-equipements="Phares escamotables, volant Nardi, Torsen">Fiche Technique</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Processus d'importation (Timeline) -->
+    <section class="section" id="processus">
+      <div class="container">
+        <div class="section-header text-center mx-auto">
+          <span class="section-kanji">過程</span>
+          <span class="section-tag">LA MÉTHODE ESPOIR</span>
+          <h2 class="section-title">Parcours & Transparence</h2>
+          <p class="section-subtitle">
+            Un processus d'importation sans faille, pour une sérénité totale. De la sélection au Japon jusqu'à la remise des clés.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">🔍</div>
+            <div class="timeline-content">
+              <h3>1. Recherche & Sélection</h3>
+              <p>Ciblage des enchères au Japon (USS, JAA) et réseau européen. Analyse stricte des carnets d'entretien et historiques (certificats VX).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">📋</div>
+            <div class="timeline-content">
+              <h3>2. Inspection sur Place</h3>
+              <p>Nos agents au Japon ou en Europe inspectent physiquement chaque véhicule (structure, compression moteur, électronique) avant tout achat.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">🚢</div>
+            <div class="timeline-content">
+              <h3>3. Importation Sécurisée</h3>
+              <p>Transport maritime Ro-Ro ou conteneur avec assurance tous risques. Prise en charge intégrale du dédouanement et des taxes (846A).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">⚖️</div>
+            <div class="timeline-content">
+              <h3>4. Homologation Française</h3>
+              <p>Passage à l'UTAC et DREAL. Conformité intégrale assurée par notre équipe technique. Vous recevez un véhicule en règle avec carte grise française.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">✨</div>
+            <div class="timeline-content">
+              <h3>5. Préparation ESPOIR</h3>
+              <p>Révision mécanique complète, detailing esthétique, et contrôle qualité final. Votre véhicule est prêt pour la route ou la piste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Financement & Simulateur -->
+    <section class="section section-dark" id="financement">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kanji">投資</span>
+          <span class="section-tag">ACCESSIBILITÉ</span>
+          <h2 class="section-title">Paiement & Financement</h2>
+          <p class="section-subtitle">
+            Parce que vivre sa passion ne devrait pas attendre. Nous proposons des solutions de financement adaptées à votre profil.
+          </p>
+        </div>
+
+        <div class="grid grid-2 align-items-center">
+          <div class="financing-info">
+            <div class="fin-method">
+              <div class="fin-icon">💳</div>
+              <div>
+                <h4>Virement Sécurisé</h4>
+                <p>Transactions rapides et hautement sécurisées via notre compte professionnel.</p>
+              </div>
+            </div>
+            <div class="fin-method">
+              <div class="fin-icon">🏦</div>
+              <div>
+                <h4>Crédit Classique</h4>
+                <p>Taux avantageux négociés avec nos partenaires bancaires (jusqu'à 72 mois).</p>
+              </div>
+            </div>
+            <div class="fin-method">
+              <div class="fin-icon">🔄</div>
+              <div>
+                <h4>LOA / LLD</h4>
+                <p>Location avec option d'achat pour une maîtrise parfaite de votre budget auto.</p>
+              </div>
+            </div>
+            <div class="fin-method">
+              <div class="fin-icon">🤝</div>
+              <div>
+                <h4>Reprise</h4>
+                <p>Nous évaluons votre ancien véhicule de sport pour faciliter votre nouvel achat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="financing-simulator">
+            <h3 class="simulator-title">Estimez votre financement</h3>
+            <p class="simulator-desc">Simulateur à titre indicatif pour un crédit auto standard (TAEG estimé : 5.9%).</p>
+
+            <div class="sim-group">
+              <label for="carPrice">Prix du véhicule (€)</label>
+              <input type="number" id="carPrice" value="50000" min="10000" max="300000" step="500">
+            </div>
+
+            <div class="sim-group">
+              <label for="downPayment">Apport initial (€) : <span id="downPaymentDisplay">10000</span> €</label>
+              <input type="range" id="downPayment" min="0" max="200000" step="500" value="10000">
+            </div>
+
+            <div class="sim-group">
+              <label for="duration">Durée (mois) : <span id="durationDisplay">48</span> mois</label>
+              <input type="range" id="duration" min="12" max="72" step="12" value="48">
+            </div>
+
+            <div class="sim-result">
+              <span class="sim-label">Mensualité estimée</span>
+              <span class="sim-value"><span id="monthlyPayment">937</span> € / mois</span>
+            </div>
+
+            <button class="btn btn-primary btn-full open-modal-btn" data-source="simulator">Étude personnalisée</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="brand-sub">ESPOIR</span>
+          <span class="brand-badge">JDM FRANCE</span>
+        </div>
+        <p class="footer-desc">
+          Spécialiste passionné de véhicules sportifs japonais et européens. Importation rigoureuse, véhicules inspectés et service sur-mesure.
+        </p>
+      </div>
+
+      <div class="footer-info">
+        <h4>Showroom Espoir JDM France</h4>
+        <p>📍 911 Route des Pistes, Le Mans</p>
+        <p>📞 01 23 45 67 89</p>
+        <p>✉️ contact@espoir-jdm-france.fr</p>
+      </div>
+
+      <div class="footer-cta">
+        <button class="btn btn-primary open-modal-btn" data-source="footer-cta">
+          Demander un essai
+        </button>
+        <p class="footer-subtext">Sans engagement • Confirmation sous 2h ouvrées</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span id="year">2025</span> Espoir JDM France. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog -->
+  <div class="modal-overlay" id="testDriveModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Fermer la fenêtre">✕</button>
+
+      <div class="modal-header">
+        <span class="modal-badge">⛩️ ESPOIR JDM FRANCE</span>
+        <h2 id="modalTitle" class="modal-title">Demande de Contact / Essai</h2>
+        <p class="modal-subtitle">
+          Un conseiller Espoir vous recontactera rapidement.
+        </p>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Nom & Prénom <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" required placeholder="ex: Thomas Dubois">
+          </div>
+          <div class="form-group">
+            <label for="phone">Numéro de téléphone <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required placeholder="ex: 06 12 34 56 78">
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse E-mail <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="ex: thomas@exemple.fr">
+          </div>
+          <div class="form-group">
+            <label for="vehicule">Véhicule d'intérêt</label>
+            <select id="vehicule" name="vehicule">
+              <option value="general" selected>Demande générale</option>
+              <option value="r34">Nissan Skyline GT-R (R34)</option>
+              <option value="supra">Toyota Supra (JZA80)</option>
+              <option value="s15">Nissan Silvia (S15)</option>
+              <option value="rx7">Mazda RX-7 (FD3S)</option>
+              <option value="chaser">Toyota Chaser (JZX100)</option>
+              <option value="evo6">Mitsubishi Lancer Evo VI</option>
+              <option value="ep3">Honda Civic Type R (EP3)</option>
+              <option value="gt3">Porsche 911 (997.1) GT3</option>
+              <option value="megane">Renault Mégane 4 RS Trophy-R</option>
+              <option value="nsx">Honda NSX-R (NA1)</option>
+              <option value="s2000">Honda S2000 (AP1)</option>
+              <option value="mx5">Mazda MX-5 (NA)</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="comments">Message ou questions spécifiques</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Précisez vos attentes..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-submit">
+          <span>Envoyer la demande</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+
+      <!-- Confirmation Success State -->
+      <div id="bookingSuccess" class="booking-success" style="display: none;">
+        <div class="success-icon">🏁</div>
+        <h3>Demande envoyée avec succès !</h3>
+        <p>
+          Merci <strong id="successName"></strong> ! Votre demande a bien été enregistrée.
+        </p>
+        <button class="btn btn-primary" id="closeSuccessBtn">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fiche Technique Modal -->
+  <div class="modal-overlay" id="specModal" aria-hidden="true" role="dialog" aria-labelledby="specModalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeSpecModalBtn" aria-label="Fermer la fenêtre">✕</button>
+
+      <div class="modal-header">
+        <span class="modal-badge">⛩️ FICHE TECHNIQUE</span>
+        <h2 id="specModalTitle" class="modal-title">Titre du Véhicule</h2>
+      </div>
+
+      <div class="spec-modal-content">
+        <div class="spec-detail-row">
+          <span class="spec-detail-label">Moteur</span>
+          <span class="spec-detail-value" id="specMoteur">...</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-detail-label">Puissance</span>
+          <span class="spec-detail-value" id="specPuissance">...</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-detail-label">Transmission</span>
+          <span class="spec-detail-value" id="specTransmission">...</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-detail-label">Équipements</span>
+          <span class="spec-detail-value" id="specEquipements">...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
